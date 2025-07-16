@@ -3,99 +3,21 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>A-1 Work Scope Dashboard</title>
-  <link rel="stylesheet" href="style.css"/>
+  <title>A-1 Plumber Training Manual</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="styles.css"/>
+  <script src="script.js" defer></script>
 </head>
 <body>
   <header>
     <img src="logo.png" alt="A-1 Logo" class="logo">
-    <h1>A-1 Work Scope Dashboard</h1>
-    <button id="darkModeToggle">🌙 Toggle Dark Mode</button>
+    <h1>A-1 Plumber Training Manual</h1>
   </header>
-
-  <main>
-    <nav>
-      <ul>
-        <li><a href="#water-heaters">Water Heaters</a></li>
-        <li><a href="#fixtures">Fixtures</a></li>
-        <li><a href="#drains">Drains & Sewer</a></li>
-        <li><a href="#leaks">Leak Detection</a></li>
-        <li><a href="#gas">Gas & Misc.</a></li>
-        <li><a href="#inspections">Inspections</a></li>
-        <li><a href="#custom">Custom</a></li>
-      </ul>
-    </nav>
-
-    <section id="water-heaters">
-      <h2>🚰 Water Heaters</h2>
-
-      <div class="card">
-        <label><input type="checkbox"> 50-Gallon AO Smith Natural Gas</label>
-        <textarea class="scope">- Shut off gas and water supply to the existing water heater.
-- Drain and disconnect the old water heater from water and gas lines.
-- Remove and dispose of the old 50-gallon water heater per local regulations.
-- Install new 50-gallon AO Smith natural gas water heater in the existing location.
-- Install new magnesium diode rod for corrosion protection.
-- Install new ball valve on the cold water supply line.
-- Replace water supply lines with new flexible stainless steel connectors.
-- Install new gas supply line and ensure connections meet UPC code.
-- Install expansion tank to handle thermal expansion in the system.
-- Install flood stop valve at the water heater base for leak detection and automatic shut-off.
-- Connect the new water heater to venting system per manufacturer’s specifications.
-- Turn on water and gas supply, and test the water heater for proper operation, leaks, and gas pressure.
-- Ensure the water heater meets proper temperature settings and safety requirements.</textarea>
-        <details><summary>Training Notes</summary>
-        <ul>
-          <li>Materials: AO Smith water heater, diode rod, ball valve, supply lines, flood stop, expansion tank</li>
-          <li>Exclusions: Structural mods, drywall repair</li>
-          <li>Area must be accessible</li>
-        </ul></details>
-      </div>
-
-      <div class="card">
-        <label><input type="checkbox"> Tankless Water Heater</label>
-        <textarea class="scope">- Shut off gas, water, and electrical (if applicable) supply to the existing water heater.
-- Drain and disconnect the existing unit from water, gas, and venting systems.
-- Remove and dispose of old tank or tankless water heater per local regulations.
-- Mount new tankless water heater unit to wall per manufacturer specifications.
-- Install new isolation valve kit for maintenance access.
-- Install new gas supply line with proper sizing and pressure.
-- Connect water supply lines with unions.
-- Install new condensate drain line if condensing model.
-- Adapt venting system to meet code and clearance.
-- Connect electrical if required.
-- Flush system, purge air, commission unit.
-- Test for gas leaks, tightness, hot water, and errors.</textarea>
-        <details><summary>Training Notes</summary>
-        <ul>
-          <li>Materials: Isolation valve kit, gas/water lines, vent kit, condensate drain</li>
-          <li>Exclusions: Electrical upgrades, drywall repair</li>
-          <li>Area must be clear and accessible</li>
-        </ul></details>
-      </div>
-
-      <div class="card">
-        <label><input type="checkbox"> 50-Gallon AO Smith Electric</label>
-        <textarea class="scope">- Shut off electrical power at the panel and water supply to the existing water heater.
-- Drain and disconnect old electric water heater from electrical and plumbing connections.
-- Remove and dispose of the existing 50-gallon electric water heater per local regulations.
-- Install new 50-gallon AO Smith electric water heater in existing location.
-- Connect cold and hot water lines using flexible connectors.
-- Install new full-port brass ball valve on cold water line.
-- Connect existing electrical circuit, check voltage/ground.
-- Install expansion tank for thermal expansion.
-- Secure per code.
-- Fill and purge system; restore power.
-- Test unit for proper operation, safety, and leaks.</textarea>
-        <details><summary>Training Notes</summary>
-        <ul>
-          <li>Materials: Electric heater, connectors, ball valve, expansion tank</li>
-          <li>Exclusions: Electrical panel upgrades, drywall repair</li>
-        </ul></details>
-      </div>
-    </section>
+  <main id="manual-container">
+    <!-- Cards will be dynamically inserted here -->
   </main>
-
-  <script src="script.js"></script>
+  <div class="buttons">
+    <button onclick="printManual()">🖨️ Print / Export PDF</button>
+  </div>
 </body>
 </html>

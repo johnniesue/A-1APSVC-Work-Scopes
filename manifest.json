@@ -1,9 +1,15 @@
 {
-  "name": "A-1 Work Scope PWA",
-  "short_name": "A1 Work Scope",
-  "start_url": ".",
+  "name": "A-1 Plumber Training Manual",
+  "short_name": "A-1 Manual",
+  "start_url": "./index.html",
   "display": "standalone",
-  "background_color": "#ffffff",
-  "description": "Work Scope Checklist for A-1 Plumbing",
-  "icons": []
+  "background_color": "#003366",
+  "theme_color": "#003366",
+  "icons": [
+    {
+      "src": "logo.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
 }
