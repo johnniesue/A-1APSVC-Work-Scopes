@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="manifest" href="manifest.json" />
+  <title>A-1 Work Scope Intake</title>
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="A-1 Logo" class="logo">
+    <h1>A-1 Plumber Work Scope Intake</h1>
+  </header>
+  <form id="workScopeForm">
+    <section>
+      <h2>Customer Info</h2>
+      <label>Name: <input type="text" name="name" /></label>
+      <label>Phone: <input type="tel" name="phone" /></label>
+      <label>Email: <input type="email" name="email" /></label>
+      <label>Service Address: <input type="text" name="address" /></label>
+      <label>Date/Time: <input type="datetime-local" name="datetime" /></label>
+    </section>
+
+    <section>
+      <h2>Water Services</h2>
+      <label><input type="checkbox" name="water_heater" /> Water Heater</label>
+      <label><input type="checkbox" name="tankless" /> Tankless Water Heater</label>
+      <label><input type="checkbox" name="line_repair" /> Water Line Repair</label>
+    </section>
+
+    <section>
+      <h2>Fixture Services</h2>
+      <label><input type="checkbox" name="toilet" /> Toilet Repair/Install</label>
+      <label><input type="checkbox" name="faucet" /> Faucet Repair/Install</label>
+    </section>
+
+    <section>
+      <h2>Leak Services</h2>
+      <label><input type="checkbox" name="leak_detect" /> Leak Detection</label>
+      <label><input type="checkbox" name="slab_leak" /> Slab Leak</label>
+    </section>
+
+    <section>
+      <h2>Drain Services</h2>
+      <label><input type="checkbox" name="drain_cleaning" /> Drain Cleaning</label>
+      <label><input type="checkbox" name="sewer" /> Sewer Line Repair</label>
+    </section>
+
+    <section>
+      <h2>Additional Services</h2>
+      <label><input type="checkbox" name="gas_line" /> Gas Line Work</label>
+      <label><input type="checkbox" name="inspection" /> Plumbing Inspection</label>
+    </section>
+
+    <section>
+      <h2>Internal Notes</h2>
+      <textarea name="internal_notes" placeholder="For training or internal use only..."></textarea>
+    </section>
+
+    <div class="buttons">
+      <button type="button" onclick="saveForm()">💾 Save Locally</button>
+      <button type="button" onclick="clearForm()">🧹 Clear</button>
+      <button type="button" onclick="exportPDF()">📄 Export PDF</button>
+    </div>
+  </form>
+  <script src="script.js"></script>
+</body>
+</html>

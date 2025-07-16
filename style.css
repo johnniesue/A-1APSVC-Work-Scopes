@@ -1,0 +1,27 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 1em;
+  background: #f4f4f4;
+  color: #222;
+}
+header {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+.logo {
+  width: 80px;
+}
+form {
+  background: white;
+  padding: 1em;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ccc;
+}
+section {
+  margin-bottom: 1em;
+}
+.buttons button {
+  margin-right: 1em;
+  padding: 0.5em 1em;
+}

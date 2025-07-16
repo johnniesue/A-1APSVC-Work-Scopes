@@ -1,0 +1,9 @@
+{
+  "name": "A-1 Work Scope PWA",
+  "short_name": "A1 Work Scope",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "description": "Work Scope Checklist for A-1 Plumbing",
+  "icons": []
+}
