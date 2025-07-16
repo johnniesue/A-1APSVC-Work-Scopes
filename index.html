@@ -1,23 +1,51 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="bg-gray-100">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>A-1 Plumber Training Manual</title>
-  <link rel="manifest" href="manifest.json">
-  <link rel="stylesheet" href="styles.css"/>
-  <script src="script.js" defer></script>
+  <title>A-1 Work Scope Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <header>
-    <img src="logo.png" alt="A-1 Logo" class="logo">
-    <h1>A-1 Plumber Training Manual</h1>
+<body class="text-gray-800">
+  <header class="bg-blue-900 text-white p-4 flex items-center justify-between">
+    <div class="flex items-center gap-4">
+      <img src="logo.png" alt="A-1 Logo" class="w-12 h-12">
+      <h1 class="text-2xl font-bold">A-1 Work Scope Dashboard</h1>
+    </div>
+    <button id="toggleDarkMode" class="bg-white text-blue-900 px-3 py-1 rounded shadow">Toggle Dark Mode</button>
   </header>
-  <main id="manual-container">
-    <!-- Cards will be dynamically inserted here -->
+
+  <main class="p-6 max-w-5xl mx-auto">
+    <section>
+      <h2 class="text-xl font-semibold mb-4">🚰 Water Heaters</h2>
+
+      <!-- Sample Card -->
+      <div class="bg-white rounded-lg shadow p-4 mb-6">
+        <div class="flex items-center justify-between mb-2">
+          <label class="text-lg font-medium"><input type="checkbox" class="mr-2">50-Gal AO Smith - Natural Gas</label>
+        </div>
+        <textarea class="w-full p-2 border rounded h-40 resize-y">- Shut off gas and water supply to the existing water heater...
+- Install flood stop valve...
+- Test unit for proper operation...</textarea>
+        <details class="mt-2">
+          <summary class="cursor-pointer text-blue-600 underline">Training Notes</summary>
+          <ul class="list-disc ml-5 mt-2 text-sm">
+            <li>Materials: AO Smith unit, flood stop, expansion tank</li>
+            <li>Exclusions: Structural mods, drywall repairs</li>
+          </ul>
+        </details>
+      </div>
+
+    </section>
   </main>
-  <div class="buttons">
-    <button onclick="printManual()">🖨️ Print / Export PDF</button>
-  </div>
+
+  <script>
+    document.getElementById('toggleDarkMode').addEventListener('click', () => {
+      document.documentElement.classList.toggle('dark');
+      document.body.classList.toggle('bg-gray-900');
+      document.body.classList.toggle('text-white');
+    });
+  </script>
 </body>
 </html>
